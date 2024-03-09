@@ -10,9 +10,9 @@ public class OutPut {
     public void getOutput(Map<Integer, Product> map){
         System.out.println("\nALL PRODUCTS: ");
         AtomicInteger count = new AtomicInteger(0);
-        map.forEach((id, product) ->
+        map.forEach((id, products) ->
                 System.out.println(count.incrementAndGet() +
-                        ") id " + id + ", " + product));
+                        ") id " + id + ", " + products));
     }
     public void getOutput(String output){
         System.out.println("\n>>" + output);
